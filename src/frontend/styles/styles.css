@@ -1,0 +1,346 @@
+
+/* All pages */
+
+body * {
+  font-family: "Helvetica", sans-serif;
+  font-size: 1em;
+}
+
+nav {
+  background-color: #6E3080;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.divCenter {
+  display: inline-block;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: #F2692D;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5%;
+  box-sizing: border-box;
+  padding: 5px 10px 5px 10px;
+  margin-top: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #F05614;
+}
+
+button:active {
+  cursor: pointer;
+  background-color: #CE470D;
+}
+
+button:disabled {
+  background-color: #F9AC8A;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+}
+
+input:required {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  border-width: 1px;
+  border-color: #A0A0A0;
+  border-radius: 2%;
+  border-style: solid;
+}
+
+select {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border-width: 1px;
+  border-color: #A0A0A0;
+  border-radius: 2%;
+  border-style: solid;
+}
+
+header:not(#loginHeader) {
+  position: relative;
+  position: sticky;
+  width: 100%;
+  border-bottom: 5px #E8E8E8 solid;
+  background-color: #F5F5F5;
+  margin-bottom: 1%;
+}
+
+/* Header Style */
+#teqHead {
+  color: #F2692D;
+}
+
+#lipHead {
+  color: #6E3080;
+}
+
+#pageTitle {
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+/* Login form style */
+.loginDiv {
+  height: 320px;
+  width: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 6px 30px #A0A0A0;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #A0A0A0;
+  border-radius: 2%;
+}
+
+#loginForm {
+  margin: 0 auto;
+  width: 90%;
+  padding: 5%;
+}
+
+#loginBtn {
+  width: 100px;
+}
+
+table, th, td {
+  border: 1px solid #DDDDDD;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+#userListDiv {
+  width: 100%;
+}
+
+#userList {
+  table-layout: fixed;
+  width: 100%;
+}
+
+#saveButton {
+  width: 150px;
+  padding: 10px;
+}
+
+#saveButtonDiv {
+  margin-top:10px;
+  text-align: right;
+}
+
+#dataDiv {
+  width:90%;
+}
+
+#dataList {
+  margin-top:2em;
+  width: 100%;
+  display:block;
+  overflow: auto;
+  white-space:nowrap;
+}
+
+/*Dashboard page styling*/
+.dashboardButton {
+  display:inline-block;
+}
+
+#logoutFooter {
+  padding-top: 200px;
+}
+
+#queryInput {
+  background-image: url('../assets/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 40%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+}
+
+label#addFilterSearchText{
+  width:100%;
+}
+.filterOptions{
+  margin: 3px;
+}
+
+#selectable .ui-selecting { background: #FECA40; }
+#selectable .ui-selected { background: #F39814; color: white; }
+#selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+#selectable li { margin: 1px; padding: 0.4em; font-size: 1em; height: 15px; }
+
+button.colomnNamesList{
+  background-color: #25a3a3;
+}
+#selectedFilters{
+  width: 60%;
+}
+#selectedFilters button{
+  background-color: #25a3a3;
+  border: 2px solid;
+  border-color: #2196F3;
+}
+
+.ui-menu {
+  list-style:none;
+  padding: 10px;
+  margin: 0;
+  display:block;
+  width:227px;
+}
+
+.ui-menu .ui-menu {
+  margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+  margin:0;
+  padding: 1px;
+}
+.ui-menu li{
+  cursor: pointer
+}
+.ui-helper-hidden-accessible{
+  display: none;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.popupContent {
+  margin: 5% auto;
+  padding: 2%;
+  background-color: #F7F7F7;
+  box-shadow: 2px 6px 30px #A0A0A0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #A0A0A0;
+  border-radius: 1%;
+  width: 50%;
+  height: 30%;
+  min-height: 300px;
+}
+
+.popupHeader {
+  font-size: 1.7em;
+  font-weight: normal;
+  color: #444444;
+  border-bottom: 1px solid #444444;
+}
+
+.close {
+  color: #444444;
+  float: right;
+  padding: 1px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.close:hover {
+  color: #A0A0A0;
+  cursor: pointer;
+}
+
+#saveQueryName {
+  width: 50%;
+}
+
+#saveCancelButtons {
+  float: right;
+  margin-top: 15%;
+}
+
+li {
+  background-color: #F4F4F4;
+}
+
+#savedQuerySelect {
+  display:inline;
+}
+
+#helpBtn {
+  float: right;
+  position: sticky;
+  display:inline-block;
+  width: 4em;
+  height: 4em;
+  margin-top: 2%;
+  margin-right: 2%;
+  cursor: pointer;
+}
+
+#helpBtn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#helpMenu {
+  width: 30%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  background-color: white;
+  border-left: 5px #E8E8E8 solid;
+  right: 0;
+  display: block;
+}
+
+#helpMenuContent {
+  width:100%;
+  height:100%;
+  position: fixed;
+  background-color: white;
+  margin-top: 2em;
+  margin-right: 2em;
+  display: block;
+}
+
+#exportToCSVButton {
+  margin-top: 40px;
+}

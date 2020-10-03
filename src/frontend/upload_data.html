@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.min.css">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="scripts/navBarScript.js"></script>
+    <title>Upload Data</title>
+</head>
+
+<body>
+    <header></header>
+</body>
+
+<main>
+    <div id="uploadDataDiv">
+        <div>
+          <label for="templateType">Template Type</label>
+          <select id="templateTypeSelect" name="templatetype">
+            <option value="" disabled selected>Pick a template type from the dropdown list...</option>
+            <option value="profile">Client Profile</option>
+            <option value="needs_access">Needs Accessments & Referrals </option>
+            <option value="comm_connections">Community Connections</option>
+            <option value="info_ori">Information and Orientation</option>
+            <option value="employ_services">Employment Related Services</option>
+            <option value="lt_enrol">LT Client Enrolment</option>
+            <option value="lt_setup">LT Course Setup</option>
+            <option value="lt_exit">LT Client Exit</option>
+          </select>
+        </div>
+        <input id="uploadedFile" type="file"/>
+
+        <div id="uploadButtonDiv">
+            <button type="submit" id="uploadButton">Upload</button>
+        </div>
+    </div>
+
+</main>
+</html>
