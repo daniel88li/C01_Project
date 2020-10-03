@@ -1,5 +1,6 @@
 # C01_Project
-Reupload of C01 Intro to Software Engineering project
+Reupload of C01 Intro to Software Engineering project.
+Created with jQuery, HTML, CSS, Node.js and Robot Framework.
 
 # C01 Bird Course Project
 
